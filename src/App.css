@@ -1,0 +1,98 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__header, .card__footer, .card__temp {
+  grid-column: span 2;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(185, 223, 228, 0.85);
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.903);
+}
+
+.card__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.card__subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight:300;
+  
+}
+
+.card__temp {
+  position: relative;
+  padding-left: 122px;
+  text-align: center;
+  font-size: 1rem;
+  z-index: 20;
+}
+
+.card__icon {
+  padding-top: 20px;
+}
+.card__info {
+  padding-top: 20px;
+}
+
+.card__description {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  z-index: 10;
+}
+
+.card__list {
+  display: grid;
+  gap: 8px;
+}
+
+.card__item {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.card__footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.card__btn {
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(172, 174, 152, 0.707);
+  color: white;
+  box-shadow: 0 0 15px rgb(22, 23, 22);
+  transition: transform 100ms ease;
+}
+
+.card__btn:hover {
+  transform: scale(1.04);
+}
+
+.card__btn:active {
+  transform: scale(1);
+  box-shadow: 1px 1px 5px rgb(31, 153, 25);
+}
